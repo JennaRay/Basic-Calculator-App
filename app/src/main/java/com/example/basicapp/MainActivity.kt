@@ -10,8 +10,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class MainActivity : AppCompatActivity(), View.OnClickListener {
+//code from following tutorial on youtube by Easy Tuto
 
+class MainActivity : AppCompatActivity(), View.OnClickListener {
+    //initiate all elements on the screen
     lateinit var btnAdd : Button
     lateinit var btnSub : Button
     lateinit var btnMult : Button
@@ -29,6 +31,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        //connect variables here to elements on the screen in xml file
         btnAdd = findViewById(R.id.btn_add)
         btnSub = findViewById(R.id.btn_subtract)
         btnMult = findViewById(R.id.btn_multiply)
@@ -37,6 +40,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         etB = findViewById(R.id.et_b)
         resultTv = findViewById(R.id.result_tv)
 
+        // set onclick events that are written below
         btnAdd.setOnClickListener(this)
         btnSub.setOnClickListener(this)
         btnMult.setOnClickListener(this)
@@ -44,6 +48,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(v: View?) {
+        //handle onclick functions for every button
         var a = etA.text.toString().toDouble()
         var b = etB.text.toString().toDouble()
         var result = 0.0
