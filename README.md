@@ -6,7 +6,7 @@ This app is a basic calculator app that will take two numbers as input and then 
 
 The purpose for creating this app, honestly, was just to get to learn the basics of Android Studio by creating a very simple app.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtube.com/shorts/3hQ76YWTPX4?feature=share)
 
 # Development Environment
 
